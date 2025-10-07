@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+#pragma warning disable CS1633
+#pragma warning disable CS8981
 namespace kait
 {
     internal class main

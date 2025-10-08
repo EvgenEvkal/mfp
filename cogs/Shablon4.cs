@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace kait.cogs
 {
-    internal class Shablon1
+    internal class Shablon4
     {
         public static void Program(string[] args)
         {
-            int n = 5;
-            for (int i = 1; i <= 10; i++)
+            int Multiply(int arg1, int arg2)
             {
-                Console.WriteLine($"5 * {i} = {n * i}");
+                return arg1 * arg2;
             }
+            Console.WriteLine(Multiply(4, 5));
         }
     }
 }

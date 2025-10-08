@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using kait.cogs;
 #pragma warning disable CS1633
 #pragma warning disable CS8981
 namespace kait
@@ -15,7 +16,7 @@ namespace kait
             bool mods = true;
             while (mods == true)
             {
-                Console.Write("Меню запуска\nВыход - 0\nВыберите мод от 1 до 10: ");
+                Console.Write("Меню запуска\nВыход - 0\nВыберите мод от 1 до 11: ");
                 var mode = Convert.ToInt32(Console.ReadLine());
                 int number_mode = 0;
                 if (number_mode == 0)
@@ -30,7 +31,7 @@ namespace kait
                             number_mode = 1;
                             Console.Clear();
                             Console.WriteLine($"==========================MODE {mode}======================");
-                            Program.Program1(args);
+                            Shablon1.Program(args);
                             Console.WriteLine($"===========================================================");
                             Console.WriteLine($"Для выхода в меню нажмите любую клавишу");
                             Console.ReadKey();
@@ -41,7 +42,18 @@ namespace kait
                             number_mode = 2;
                             Console.Clear();
                             Console.WriteLine($"==========================MODE {mode}======================");
-                            Program.Program2(args);
+                            Shablon2.Program(args);
+                            Console.WriteLine($"===========================================================");
+                            Console.WriteLine($"Для выхода в меню нажмите любую клавишу");
+                            Console.ReadKey();
+                            Console.Clear();
+                            number_mode = 0;
+                            break;
+                        case 3:
+                            number_mode = 3;
+                            Console.Clear();
+                            Console.WriteLine($"==========================MODE {mode}======================");
+                            Shablon3.Program(args);
                             Console.WriteLine($"===========================================================");
                             Console.WriteLine($"Для выхода в меню нажмите любую клавишу");
                             Console.ReadKey();
@@ -52,7 +64,7 @@ namespace kait
                             number_mode = 4;
                             Console.Clear();
                             Console.WriteLine($"==========================MODE {mode}======================");
-                            Program.Program4(args);
+                            Shablon4.Program(args);
                             Console.WriteLine($"===========================================================");
                             Console.WriteLine($"Для выхода в меню нажмите любую клавишу");
                             Console.ReadKey();
@@ -63,7 +75,7 @@ namespace kait
                             number_mode = 5;
                             Console.Clear();
                             Console.WriteLine($"==========================MODE {mode}======================");
-                            Program.Program5(args);
+                            Shablon5.Program(args);
                             Console.WriteLine($"===========================================================");
                             Console.WriteLine($"Для выхода в меню нажмите любую клавишу");
                             Console.ReadKey();
@@ -74,7 +86,7 @@ namespace kait
                             number_mode = 6;
                             Console.Clear();
                             Console.WriteLine($"==========================MODE {mode}======================");
-                            Program.Program6(args);
+                            Shablon6.Program(args);
                             Console.WriteLine($"===========================================================");
                             Console.WriteLine($"Для выхода в меню нажмите любую клавишу");
                             Console.ReadKey();
@@ -85,7 +97,7 @@ namespace kait
                             number_mode = 7;
                             Console.Clear();
                             Console.WriteLine($"==========================MODE {mode}======================");
-                            Program.Program7(args);
+                            Shablon7.Program(args);
                             Console.WriteLine($"===========================================================");
                             Console.WriteLine($"Для выхода в меню нажмите любую клавишу");
                             Console.ReadKey();
@@ -96,7 +108,7 @@ namespace kait
                             number_mode = 8;
                             Console.Clear();
                             Console.WriteLine($"==========================MODE {mode}======================");
-                            Program.Program8(args);
+                            Shablon8.Program(args);
                             Console.WriteLine($"===========================================================");
                             Console.WriteLine($"Для выхода в меню нажмите любую клавишу");
                             Console.ReadKey();
@@ -107,7 +119,7 @@ namespace kait
                             number_mode = 9;
                             Console.Clear();
                             Console.WriteLine($"==========================MODE {mode}======================");
-                            Program.Program9(args);
+                            Shablon9.Program(args);
                             Console.WriteLine($"===========================================================");
                             Console.WriteLine($"Для выхода в меню нажмите любую клавишу");
                             Console.ReadKey();
@@ -118,7 +130,18 @@ namespace kait
                             number_mode = 10;
                             Console.Clear();
                             Console.WriteLine($"==========================MODE {mode}======================");
-                            Program.Program10(args);
+                            Shablon10.Program(args);
+                            Console.WriteLine($"===========================================================");
+                            Console.WriteLine($"Для выхода в меню нажмите любую клавишу");
+                            Console.ReadKey();
+                            Console.Clear();
+                            number_mode = 0;
+                            break;
+                        case 11:
+                            number_mode = 10;
+                            Console.Clear();
+                            Console.WriteLine($"==========================MODE {mode}======================");
+                            Shablon11.Program(args);
                             Console.WriteLine($"===========================================================");
                             Console.WriteLine($"Для выхода в меню нажмите любую клавишу");
                             Console.ReadKey();
